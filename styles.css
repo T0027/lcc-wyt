@@ -72,7 +72,7 @@ h2 {
 .gallery-item img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;  /* 保持图片比例 */
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
@@ -148,37 +148,4 @@ form button {
 
 form button:hover {
     background-color: #88b19e;
-}
-/* 图片项的容器（悬浮方框） */
-.image-item {
-    width: 250px; /* 固定宽度 */
-    height: 250px; /* 固定高度 */
-    text-align: center; /* 图片注释居中 */
-    background-color: #fefefe; /* 背景颜色 */
-    border-radius: 12px; /* 圆角 */
-    overflow: hidden; /* 防止图片超出边界 */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
-    margin: 10px;
-    transition: transform 0.3s ease-in-out; /* 图片悬浮效果 */
-}
-
-/* 鼠标悬停时的效果 */
-.image-item:hover {
-    transform: scale(1.05); /* 图片放大 */
-}
-
-/* 控制图片尺寸 */
-.image-item img {
-    width: 100%;  /* 图片宽度适应容器 */
-    height: 100%;  /* 图片高度适应容器 */
-    object-fit: cover;  /* 保持图片比例，并裁剪填充容器 */
-    border-radius: 8px; /* 图片的圆角 */
-}
-
-/* 图片注释 */
-.image-caption {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #555;
-    font-style: italic;
 }
